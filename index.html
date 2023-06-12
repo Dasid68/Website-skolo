@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>Михајло Пупин</title>
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <!--FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+        <!--PACIFICO-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <!--UBUNTU-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+        
+    <!--FONT AWESOME-->
+    <script src="https://kit.fontawesome.com/717ab2a274.js" crossorigin="anonymous"></script>
+
+    <!--COUNTER UP-->
+    <!--<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="jQuery/Counter-Up-master/jquery.counterup.min.js"></script>
+    <script src="homepage/script/counterup.js"></script>-->
+    <script src="https://unpkg.com/counterup2@2.0.2/dist/index.js">	</script>
+     
+
+        <script>
+            import counterUp from 'counterip2'
+            const { counterUp} = window.counterUp
+            const el = document.getElementsByClassName("counter")
+
+            counterUp( el, {
+                duration:5000,
+                delay:16
+            })
+       </script>
+</head>
+<body>
+    
+    <header class="nav-bar">
+        <div class="nav-start">
+            <img src="/homepage/logo.jpg" title="logo" id="navbar-logo">
+            <nav class="menu">
+                <ul class="menu-bar">
+                    <li><a href="#" class="link-navbar">LINK</a></li>
+                    <li><a href="#" class="link-navbar">LINK</a></li>
+                    <li><a href="#" class="link-navbar">LINK</a></li>
+                    <li><a href="#" class="link-navbar">LINK</a></li>
+                    <li><a href="#" class="link-navbar">LINK</a></li>
+                    <li><a href="#" class="link-navbar">LINK</a></li>
+                    <li><a href="#" class="link-navbar">LINK</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div class="nav-end">
+            <div class="right-container">
+                <form action="" role="search" class="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="search" name="search" placeholder="Search">
+                </form>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <section class="slideshow">
+            
+
+            <div class="left-button-container">
+                <i class="fa-solid fa-angle-left" id="arrow-left"></i>
+            </div>
+
+            <div class="slide-container">
+                <div class="slideshow-image-container">
+                    <img title="slideshow image" src="/homepage/referenceimage.jpg">
+                </div>
+                <div class="slideshow-text-container">
+                    <h1 class="title-of-slideshow">
+                        TITLE HEADER
+                    </h1>
+                    <p class="description-of-slideshow">
+                        DESCRIPTION SLIDESHOW
+                    </p>
+                </div>
+            </div>
+
+            <div class="right-button-container">
+                <i class="fa-solid fa-angle-right" id="arrow-right"></i>
+            </div>
+
+            <div class="slideshow-dots">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                
+            </div>
+        </section>
+
+        <section class="news">
+            <div class="news-title">
+                <h1>Последни новости</h1>
+            </div>
+            <div class="news-container">
+                <div class="news-card">
+                    <div class="news-card-image-container">
+                        <img src="/homepage/referenceimage.jpg">
+                    </div>
+                    <div class="news-text-content">
+                        <div class="news-title">
+                            <h1>НАСЛОВ НОВОСТ</h1>
+                        </div>
+                        <div class="news-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tincidunt sagittis pharetra. 
+                            Suspendisse ut efficitur eros. Aliquam vestibulum viverra nisi ut ornare. 
+                            Aliquam consequat nulla vitae elit tempus, ac sollicitudin metus dictum. 
+                            Sed tempus, odio vel feugiat ultrices, lorem risus tincidunt magna, nec 
+                            mollis sem metus sed massa. 
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="news-card">
+                    <div class="news-card-image-container">
+                        <img src="/homepage/referenceimage.jpg">
+                    </div>
+                    <div class="news-text-content">
+                        <div class="news-title">
+                            <h1>НАСЛОВ НОВОСТ</h1>
+                        </div>
+                        <div class="news-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tincidunt sagittis pharetra. 
+                            Suspendisse ut efficitur eros. Aliquam vestibulum viverra nisi ut ornare. 
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <div class="news-card-image-container">
+                        <img src="/homepage/referenceimage.jpg">
+                    </div>
+                    <div class="news-text-content">
+                        <div class="news-title">
+                            <h1>НАСЛОВ НОВОСТ</h1>
+                        </div>
+                        <div class="news-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tincidunt sagittis pharetra. 
+                            Suspendisse ut efficitur eros. Aliquam vestibulum viverra nisi ut ornare. 
+                            Aliquam consequat nulla vitae elit tempus, ac sollicitudin metus dictum. 
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <div class="news-card-image-container">
+                        <img src="/homepage/referenceimage.jpg">
+                    </div>
+                    <div class="news-text-content">
+                        <div class="news-title">
+                            <h1>НАСЛОВ НОВОСТ</h1>
+                        </div>
+                        <div class="news-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tincidunt sagittis pharetra. 
+                            Suspendisse ut efficitur eros. Aliquam vestibulum viverra nisi ut ornare. 
+                            Aliquam consequat nulla vitae elit tempus, ac sollicitudin metus dictum. 
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <div class="news-card-image-container">
+                        <img src="/homepage/referenceimage.jpg">
+                    </div>
+                    <div class="news-text-content">
+                        <div class="news-title">
+                            <h1>НАСЛОВ НОВОСТ</h1>
+                        </div>
+                        <div class="news-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tincidunt sagittis pharetra. 
+                            Suspendisse ut efficitur eros. Aliquam vestibulum viverra nisi ut ornare. 
+                            Aliquam consequat nulla vitae elit tempus, ac sollicitudin metus dictum. 
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <div class="news-card-image-container">
+                        <img src="/homepage/referenceimage.jpg">
+                    </div>
+                    <div class="news-text-content">
+                        <div class="news-title">
+                            <h1>НАСЛОВ НОВОСТ</h1>
+                        </div>
+                        <div class="news-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tincidunt sagittis pharetra. 
+                            Suspendisse ut efficitur eros. Aliquam vestibulum viverra nisi ut ornare. 
+                            Aliquam consequat nulla vitae elit tempus, ac sollicitudin metus dictum. 
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="count-up">
+            <div class="count-up-container">
+                <div class="counter-box">
+                    <span class="counter">1000 +</span>
+                    <h1>Ученици</h1>
+                </div>
+                <div class="counter-box">
+                    <span class="counter">50 +</span>
+                    <h1>Професори</h1>
+                </div>
+                <div class="counter-box">
+                    <span class="counter">350</span>
+                    <h1>Проекти</h1>
+                </div>
+                <div class="counter-box">
+                    <span class="counter">5</span>
+                    <h1>Смерови</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="who-are-we">
+            <div class="who-are-we-title">
+                <h1>Ние</h1>
+            </div>
+            <div class="who-are-we-content-wrapper">
+                <div class="image-container">
+                    <img src="homepage/referenceimage.jpg">
+                </div>
+                <div class="description-container">
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                        when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                        It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+                        It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+                        and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                </div>
+            </div>
+            
+        </section>
+
+        <section class="city-partners">
+            <div class="partner-box">
+                <img src="/city partners/grad-skopje-logo.png">
+            </div>
+
+            <div class="partner-box">
+                <img src="/city partners/drzaven-ispiten-centar-skopje.jpg">
+            </div>
+
+            <div class="partner-box">
+                <img src="/city partners/biro.png">
+            </div>
+
+            <div class="partner-box">
+                <img src="/city partners/ednevnik-logo (1).png"
+            </div>
+
+        </section>
+
+        <section class="why-us">
+            <div class="why-us-title">
+                <h1>Зошто Михајло Пупин?</h1>
+            </div>
+            <div class="why-us-reasons-container">
+                <div class="why-us-reasons-wrapper">
+                    <div class="why-us-reasons-start">
+                        <div class="why-us-reason">
+                            <img src="/homepage/teacher-7.png">
+                            <h1>Посветени професори</h1>
+                        </div>
+                        <div class="why-us-reason">
+                            <img src="homepage/printer.png">
+                            <h1>Современа опрема</h1>
+                        </div>
+                        <div class="why-us-reason">
+                            <img src="homepage/solder.png">
+                            <h1>Практична настава</h1>
+                        </div>
+                    </div>
+                    <div class="why-us-reasons-end">
+                        <div class="why-us-reason">
+                            <img src="homepage/electrician.png">
+                            <h1>Стручно образование</h1>
+                        </div>
+                        <div class="why-us-reason">
+                            <img src="homepage/degree.png">
+                            <h1>Стручна диплома</h1>
+                        </div>
+                        <div class="why-us-reason">
+                            <img src="homepage/work.png">
+                            <h1>Можност за вработување</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2964.8866302083734!2d21.476789811931027!3d42.0027085574829!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13543fd4c184b2e7%3A0x654b8229281c852a!2sElectrotechnical%20High%20School%20%E2%80%9EMihajlo%20Pupin%E2%80%9C!5e0!3m2!1sen!2smk!4v1685999681064!5m2!1sen!2smk" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="footer-content-wrapper">
+                <div class="footer-content-area">
+                    <div class="footer-contact-container">
+                        <h1>Контакт</h1>
+                        <ul>
+                            <li><i class="fa-solid fa-phone"></i> 070/222/555</li>
+                            <li><i class="fa-solid fa-envelope"></i> mihajlopupin@gmail.com</li>
+                            <li><i class="fa-solid fa-location-dot"></i><span class="footer-contact">ул.”Благоја Стефковски” б.б</span> </li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-container">
+                        <h1>Корисни линкови</h1>
+                        <ul class="list-style-type-none">
+                            <li>Едневник</li>
+                            <li>ЛИНК</li>
+                            <li>ЛИНК</li>
+                            <li>ЛИНК</li>
+                            <li>ЛИНК</li>
+                        </ul>
+                    </div>
+                    <div class="footer-latest-news">
+                        <h1>Последна новост</h1>
+                    </div>
+                    
+                </div>
+                <div class="footer-logo-container">
+                    <img src="homepage/transparent logo.png">
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-info">
+                    ©
+                    <span class="year" id="year">Javascript vraka godina</span>
+                    <p>СЕТУГС „Михајло Пупин“. Сите права се задржани. | <span>Developed by David Kostovski</span> </p>
+                </div>
+                <div class="footer-bottom-socials">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li><a href="#">
+                            <i class="fa-brands fa-youtube"></i></li>
+                        </a>
+                    </ul>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--SCRIPT TO GET YEAR-->
+   <script>
+        yearc = document.getElementById("year");
+        date = new Date()
+        year = date.getFullYear();
+
+        yearc.innerHTML = year;
+   </script>
+
+</body>
+</html>
