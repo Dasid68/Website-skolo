@@ -226,3 +226,84 @@
 
     
 }
+
+/*ABOUT US*/
+
+@media only screen and (max-width:1250px)
+{
+    .who-are-we .who-are-we-content-wrapper .who-are-we-image{
+        object-fit: cover;
+    }
+}
+
+@media only screen and (max-width:900px)
+{
+    .who-are-we .who-are-we-content-wrapper{
+        flex-direction: column;
+    
+        .who-are-we-image{
+            width:100%;
+            object-fit: cover;
+        }
+        
+        .description-container{
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and (max-width:800px)
+{
+    .who-are-we .who-are-we-content-wrapper{
+
+        .who-are-we-image{
+            height: 500px;
+        }
+    }
+}
+
+/*NAV BAR*/
+
+@media only screen and (max-width: 688px)
+{
+    .nav-bar{
+        //height: 200px;
+
+        .nav-start{
+
+            .menu{
+                display:none;
+            }
+        }
+
+        /*.nav-end{
+            .right-container{
+
+                .search{
+                    width:20px;
+                }
+            }
+        }*/
+
+        .nav-end{
+            display:none;
+        }
+
+        .small-screen-navbar-icons{
+            display:block;
+            .small-screen-wrapper{
+
+                .hamburger-menu{
+                    display: block;
+                }
+                
+                .search-small-screen{
+                    display:block;
+                }
+            }
+            
+        }
+
+        
+    }
+}

@@ -7,6 +7,7 @@
     <meta name="robots" content="noindex">
     <title>Михајло Пупин</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/responsive.css">
 
     <!--FONT-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -44,7 +45,13 @@
 </head>
 <body>
     
-    <header class="nav-bar">
+    <div class="top-nav-bar">
+
+        ad
+
+    </div>
+
+    <header class="nav-bar" id="navBar">
         <div class="nav-start">
             <img src="homepage/logo.jpg" title="logo" id="navbar-logo">
             <nav class="menu">
@@ -69,6 +76,25 @@
             </div>
         </div>
 
+        <div class="small-screen-navbar-icons">
+            <div class="small-screen-wrapper">
+                <div class="hamburger-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="search-small-screen" id="search-box-open" onclick = "openSearch()">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="search-box-small-screen" id="searchBX">
+            <form action="">
+                <input type="search">
+
+            </form>
+        </div>
+
+        
     </header>
 
     <main>
@@ -117,16 +143,18 @@
                         <img src="homepage/referenceimage.jpg">
                     </div>
                     <div class="news-text-content">
-                        <div class="news-title">
+                        
                             <h1>НАСЛОВ НОВОСТ</h1>
-                        </div>
-                        <div class="news-description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tincidunt sagittis pharetra. 
-                            Suspendisse ut efficitur eros. Aliquam vestibulum viverra nisi ut ornare. 
-                            Aliquam consequat nulla vitae elit tempus, ac sollicitudin metus dictum. 
-                            Sed tempus, odio vel feugiat ultrices, lorem risus tincidunt magna, nec 
-                            mollis sem metus sed massa. 
-                        </div>
+                        
+                        
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tincidunt sagittis pharetra. 
+                                Suspendisse ut efficitur eros. Aliquam vestibulum viverra nisi ut ornare. 
+                                Aliquam consequat nulla vitae elit tempus, ac sollicitudin metus dictum. 
+                                Sed tempus, odio vel feugiat ultrices, lorem risus tincidunt magna, nec 
+                                mollis sem metus sed massa. 
+                            </p>
+                        
                     </div>
                     
                 </div>
@@ -136,14 +164,14 @@
                         <img src="homepage/referenceimage.jpg">
                     </div>
                     <div class="news-text-content">
-                        <div class="news-title">
+                        
                             <h1>НАСЛОВ НОВОСТ</h1>
-                        </div>
-                        <div class="news-description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tincidunt sagittis pharetra. 
-                            Suspendisse ut efficitur eros. Aliquam vestibulum viverra nisi ut ornare. 
-                            
-                        </div>
+                        
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tincidunt sagittis pharetra. 
+                                Suspendisse ut efficitur eros. Aliquam vestibulum viverra nisi ut ornare. 
+                            </p>
+                        
                     </div>
                 </div>
 
@@ -152,15 +180,15 @@
                         <img src="homepage/referenceimage.jpg">
                     </div>
                     <div class="news-text-content">
-                        <div class="news-title">
+                        
                             <h1>НАСЛОВ НОВОСТ</h1>
-                        </div>
-                        <div class="news-description">
+                        
+                        <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tincidunt sagittis pharetra. 
                             Suspendisse ut efficitur eros. Aliquam vestibulum viverra nisi ut ornare. 
                             Aliquam consequat nulla vitae elit tempus, ac sollicitudin metus dictum. 
-                            
-                        </div>
+                        </p>   
+                        
                     </div>
                 </div>
 
@@ -169,15 +197,14 @@
                         <img src="homepage/referenceimage.jpg">
                     </div>
                     <div class="news-text-content">
-                        <div class="news-title">
+                        
                             <h1>НАСЛОВ НОВОСТ</h1>
-                        </div>
-                        <div class="news-description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tincidunt sagittis pharetra. 
-                            Suspendisse ut efficitur eros. Aliquam vestibulum viverra nisi ut ornare. 
-                            Aliquam consequat nulla vitae elit tempus, ac sollicitudin metus dictum. 
-                            
-                        </div>
+                        
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tincidunt sagittis pharetra. 
+                                Suspendisse ut efficitur eros. Aliquam vestibulum viverra nisi ut ornare. 
+                                Aliquam consequat nulla vitae elit tempus, ac sollicitudin metus dictum. 
+                            </p> 
                     </div>
                 </div>
 
@@ -186,15 +213,14 @@
                         <img src="homepage/referenceimage.jpg">
                     </div>
                     <div class="news-text-content">
-                        <div class="news-title">
+                        
                             <h1>НАСЛОВ НОВОСТ</h1>
-                        </div>
-                        <div class="news-description">
+                        
+                        <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tincidunt sagittis pharetra. 
                             Suspendisse ut efficitur eros. Aliquam vestibulum viverra nisi ut ornare. 
                             Aliquam consequat nulla vitae elit tempus, ac sollicitudin metus dictum. 
-                            
-                        </div>
+                        </p> 
                     </div>
                 </div>
 
@@ -203,15 +229,14 @@
                         <img src="homepage/referenceimage.jpg">
                     </div>
                     <div class="news-text-content">
-                        <div class="news-title">
+                        
                             <h1>НАСЛОВ НОВОСТ</h1>
-                        </div>
-                        <div class="news-description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tincidunt sagittis pharetra. 
-                            Suspendisse ut efficitur eros. Aliquam vestibulum viverra nisi ut ornare. 
-                            Aliquam consequat nulla vitae elit tempus, ac sollicitudin metus dictum. 
-                            
-                        </div>
+                        
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tincidunt sagittis pharetra. 
+                                Suspendisse ut efficitur eros. Aliquam vestibulum viverra nisi ut ornare. 
+                                Aliquam consequat nulla vitae elit tempus, ac sollicitudin metus dictum. 
+                            </p> 
                     </div>
                 </div>
             </div>
@@ -220,11 +245,11 @@
         <section class="count-up">
             <div class="count-up-container">
                 <div class="counter-box">
-                    <span class="counter">1000 +</span>
+                    <span class="counter">1000+</span>
                     <h1>Ученици</h1>
                 </div>
                 <div class="counter-box">
-                    <span class="counter">50 +</span>
+                    <span class="counter">50+</span>
                     <h1>Професори</h1>
                 </div>
                 <div class="counter-box">
@@ -239,14 +264,16 @@
         </section>
 
         <section class="who-are-we">
-            <div class="who-are-we-title">
-                <h1>Ние</h1>
-            </div>
+            
             <div class="who-are-we-content-wrapper">
-                <div class="image-container">
-                    <img src="homepage/referenceimage.jpg">
-                </div>
+                <!--<div class="image-container"> -->
+                    <img src="homepage/skolo napred.jpg" class="who-are-we-image">
+              <!--  </div> -->
                 <div class="description-container">
+
+                    
+                        <h1 class="who-are-we-title">Ние</h1>
+
                     <p>
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
@@ -261,22 +288,23 @@
         </section>
 
         <section class="city-partners">
-            <div class="partner-box">
-                <img src="city partners/grad-skopje-logo.png">
+            <div class="city-partners-wrapper">
+                <div class="partner-box">
+                    <img src="city partners/grad-skopje-logo.png">
+                </div>
+    
+                <div class="partner-box">
+                    <img src="city partners/drzaven-ispiten-centar-skopje.jpg">
+                </div>
+    
+                <div class="partner-box">
+                    <img src="city partners/biro.png">
+                </div>
+    
+                <div class="partner-box">
+                    <img src="city partners/ednevnik-logo (1).png">
+                </div>
             </div>
-
-            <div class="partner-box">
-                <img src="city partners/drzaven-ispiten-centar-skopje.jpg">
-            </div>
-
-            <div class="partner-box">
-                <img src="city partners/biro.png">
-            </div>
-
-            <div class="partner-box">
-                <img src="city partners/ednevnik-logo (1).png">
-            </div>
-
         </section>
 
         <section class="why-us">
@@ -462,6 +490,22 @@
         year = date.getFullYear();
 
         yearc.innerHTML = year;
+   </script>
+
+   <script>
+        var searchBox = document.getElementById("searchBX");
+        var navBar = document.getElementById("navBar")
+        function openSearch(){
+            searchBox.style.display = "block";
+            navBar.classList.toggle("expand");
+            //navBar.style.animation = "drop 1s";
+            
+        }
+
+        function closeSearch(){
+            searchBox.style.display = "none";
+        }
+
    </script>
 
 </body>

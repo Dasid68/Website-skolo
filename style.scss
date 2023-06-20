@@ -11,6 +11,30 @@ $navbar : red;
     list-style-type: none;
 }
 
+.expand{
+    height: 200px;
+    animation: drop 1s;
+}
+
+@keyframes drop{
+    from{
+        height: 100px;
+    }
+    to{
+        height: 200px;
+    }
+    
+}
+
+@keyframes close{
+    from{
+        height: 200px;
+    }
+    to{
+        height: 100px;
+    }
+}
+
 
 /*NAVBAR*/
 
@@ -35,6 +59,12 @@ $navbar : red;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    position: relative;
+    //height: 100px;
+
+    //animation: drop 1s;
+
+    
 
     .nav-start
     {
@@ -99,6 +129,7 @@ $navbar : red;
             {
                 position: relative;
                 //display: flex;
+                transition: width 1s; 
 
                 input{
                     background-color: #f4f4f4;
@@ -118,6 +149,50 @@ $navbar : red;
             }
         }
     }
+
+    .small-screen-navbar-icons{
+        //background: red;
+        display:none;
+        width: 20%;
+        
+
+        .small-screen-wrapper{
+            display:flex;
+            justify-content: space-around;
+            //width:30%;
+
+            .hamburger-menu{
+                // background-color: red;
+                display:none;
+                 //padding-right: 30px;
+                 i{
+                     font-size:20px;
+                 }
+             }
+         
+             .search-small-screen{
+                 display:none;
+             }
+        }
+
+
+    }
+
+    .search-box-small-screen{
+        width: 100%;
+        position: absolute;
+        left:0;
+        top:150px;
+        display: none;
+        z-index: 1000;
+        form{
+            
+            input{
+                width: 100%;
+            }
+        }
+    }
+    
     
 }
 
@@ -320,7 +395,7 @@ $navbar : red;
         .news-card{
             width:32%;
             height: 100%;
-            min-height: 500px;
+            //min-height: 500px;
             //max-height: 500px;
             //background-color: red;
             display: -webkit-box;
@@ -490,18 +565,13 @@ $navbar : red;
 {
     width: 100%;
     background-color: rgb(175, 164, 114);
+    //padding:25px;
 
     
     .who-are-we-title{
-        width: 100%;
-        height: 100%;
-        padding: 20px;
-
-        h1{
-            font-size: 40px;
-            font-family: 'Pacifico', cursive;
-            font-weight: 100;
-        }
+        font-size: 40px;
+        font-family: 'Pacifico', cursive;
+        font-weight: 100; 
     }
 
     .who-are-we-content-wrapper{
@@ -529,6 +599,10 @@ $navbar : red;
                 transform:translateY(-30%);
                 
             }
+        }
+
+        .who-are-we-image{
+            width:50%;
         }
 
         .description-container{

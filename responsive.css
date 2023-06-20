@@ -141,4 +141,57 @@
   .why-us .why-us-reasons-container .why-us-reasons-wrapper .why-us-reasons-end {
     width: 100%;
   }
+}
+/*ABOUT US*/
+@media only screen and (max-width: 1250px) {
+  .who-are-we .who-are-we-content-wrapper .who-are-we-image {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .who-are-we .who-are-we-content-wrapper {
+    flex-direction: column;
+  }
+  .who-are-we .who-are-we-content-wrapper .who-are-we-image {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .who-are-we .who-are-we-content-wrapper .description-container {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .who-are-we .who-are-we-content-wrapper .who-are-we-image {
+    height: 500px;
+  }
+}
+/*NAV BAR*/
+@media only screen and (max-width: 688px) {
+  .nav-bar {
+    /*.nav-end{
+        .right-container{
+
+            .search{
+                width:20px;
+            }
+        }
+    }*/
+  }
+  .nav-bar .nav-start .menu {
+    display: none;
+  }
+  .nav-bar .nav-end {
+    display: none;
+  }
+  .nav-bar .small-screen-navbar-icons {
+    display: block;
+  }
+  .nav-bar .small-screen-navbar-icons .small-screen-wrapper .hamburger-menu {
+    display: block;
+  }
+  .nav-bar .small-screen-navbar-icons .small-screen-wrapper .search-small-screen {
+    display: block;
+  }
 }/*# sourceMappingURL=responsive.css.map */
