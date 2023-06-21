@@ -52,47 +52,53 @@
     </div>
 
     <header class="nav-bar" id="navBar">
-        <div class="nav-start">
-            <img src="homepage/logo.jpg" title="logo" id="navbar-logo">
-            <nav class="menu">
-                <ul class="menu-bar">
-                    <li><a href="#" class="link-navbar">LINK</a></li>
-                    <li><a href="#" class="link-navbar">LINK</a></li>
-                    <li><a href="#" class="link-navbar">LINK</a></li>
-                    <li><a href="#" class="link-navbar">LINK</a></li>
-                    <li><a href="#" class="link-navbar">LINK</a></li>
-                    <li><a href="#" class="link-navbar">LINK</a></li>
-                    <li><a href="#" class="link-navbar">LINK</a></li>
-                </ul>
-            </nav>
-        </div>
-        
-        <div class="nav-end">
-            <div class="right-container">
-                <form action="" role="search" class="search">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <input type="search" name="search" placeholder="Search">
+        <div class="navBar-wrapper">
+            <div class="nav-start">
+                <img src="homepage/logo.jpg" title="logo" id="navbar-logo">
+                <nav class="menu">
+                    <ul class="menu-bar">
+                        <li><a href="#" class="link-navbar">LINK</a></li>
+                        <li><a href="#" class="link-navbar">LINK</a></li>
+                        <li><a href="#" class="link-navbar">LINK</a></li>
+                        <li><a href="#" class="link-navbar">LINK</a></li>
+                        <li><a href="#" class="link-navbar">LINK</a></li>
+                        <li><a href="#" class="link-navbar">LINK</a></li>
+                        <li><a href="#" class="link-navbar">LINK</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <div class="nav-end">
+                <div class="right-container">
+                    <form action="" role="search" class="search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="search" name="search" placeholder="Search">
+                    </form>
+                </div>
+            </div>
+    
+            <div class="small-screen-navbar-icons">
+                <div class="small-screen-wrapper">
+                    <div class="hamburger-menu">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <div class="search-small-screen" id="search-box-open" >
+                        <i class="fa-solid fa-magnifying-glass" id="magnifying-glass" onclick = "openSearch()"></i>
+                        <i class="fa-solid fa-xmark" id="x-mark" onclick = "closeSearch()"></i>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="search-box-small-screen" id="searchBX">
+                <form action="">
+                    <input type="search">
+    
                 </form>
             </div>
         </div>
+        
 
-        <div class="small-screen-navbar-icons">
-            <div class="small-screen-wrapper">
-                <div class="hamburger-menu">
-                    <i class="fa-solid fa-bars"></i>
-                </div>
-                <div class="search-small-screen" id="search-box-open" onclick = "openSearch()">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
-            </div>
-        </div>
-
-        <div class="search-box-small-screen" id="searchBX">
-            <form action="">
-                <input type="search">
-
-            </form>
-        </div>
+      
 
         
     </header>
@@ -461,9 +467,15 @@
             </div>
             <div class="footer-bottom">
                 <div class="footer-bottom-info">
-                    ©
-                    <span class="year" id="year">Javascript vraka godina</span>
-                    <p>СЕТУГС „Михајло Пупин“. Сите права се задржани. | <span>Developed by David Kostovski, Marko Nikolovski</span> </p>
+                    
+                    <div class="footer-bottom-info-start">
+                        <p> ©<span class="year" id="year"></span> СЕТУГС „Михајло Пупин“.</p>
+                        <span class="footer-rights"> Сите права се задржани.</span>
+                    </div>
+                    
+                    
+
+                    <span class="footer-developed"> Developed by David Kostovski, Marko Nikolovski</span>
                 </div>
                 <div class="footer-bottom-socials">
                     <ul>
@@ -492,18 +504,33 @@
         yearc.innerHTML = year;
    </script>
 
+   <!--OPEN SEARCH IN SMALL NAVBAR-->
    <script>
         var searchBox = document.getElementById("searchBX");
-        var navBar = document.getElementById("navBar")
+        var navBar = document.getElementById("navBar");
+        var xMark = document.getElementById("x-mark");
+        var magnifyingGlass = document.getElementById("magnifying-glass")
+
         function openSearch(){
-            searchBox.style.display = "block";
-            navBar.classList.toggle("expand");
-            //navBar.style.animation = "drop 1s";
-            
+            navBar.classList.remove("close");
+           navBar.classList.add("expand");
+           magnifyingGlass.style.display = "none";
+           xMark.style.display = "block";
+
+           navBar.style.alignItems = "flex-start";
+
         }
 
         function closeSearch(){
-            searchBox.style.display = "none";
+            navBar.classList.remove("expand");
+            navBar.classList.add("close");
+
+            xMark.style.display = "none";
+            magnifyingGlass.style.display = "block";
+        }
+
+        if(navBar.style.width > "688"){
+            closeSearch();
         }
 
    </script>

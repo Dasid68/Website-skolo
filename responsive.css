@@ -169,7 +169,7 @@
 }
 /*NAV BAR*/
 @media only screen and (max-width: 688px) {
-  .nav-bar {
+  .nav-bar .navBar-wrapper {
     /*.nav-end{
         .right-container{
 
@@ -179,19 +179,54 @@
         }
     }*/
   }
-  .nav-bar .nav-start .menu {
+  .nav-bar .navBar-wrapper .nav-start .menu {
     display: none;
   }
-  .nav-bar .nav-end {
+  .nav-bar .navBar-wrapper .nav-end {
     display: none;
   }
-  .nav-bar .small-screen-navbar-icons {
+  .nav-bar .navBar-wrapper .small-screen-navbar-icons {
     display: block;
   }
-  .nav-bar .small-screen-navbar-icons .small-screen-wrapper .hamburger-menu {
+  .nav-bar .navBar-wrapper .small-screen-navbar-icons .small-screen-wrapper .hamburger-menu {
     display: block;
   }
-  .nav-bar .small-screen-navbar-icons .small-screen-wrapper .search-small-screen {
+  .nav-bar .navBar-wrapper .small-screen-navbar-icons .small-screen-wrapper .search-small-screen {
     display: block;
+  }
+}
+/*FOOTER*/
+@media only screen and (max-width: 830px) {
+  .footer .footer-container .footer-bottom .footer-bottom-socials {
+    display: none;
+  }
+  .footer .footer-container .footer-bottom .footer-bottom-info .footer-bottom-info-start p {
+    font-size: 12px;
+  }
+  .footer .footer-container .footer-bottom .footer-bottom-info .footer-bottom-info-start p .year {
+    font-size: 12px;
+  }
+  .footer .footer-container .footer-bottom .footer-bottom-info .footer-bottom-info-start .footer-rights {
+    font-size: 12px;
+  }
+  .footer .footer-container .footer-bottom .footer-bottom-info .footer-developed {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .footer .footer-container .footer-bottom .footer-bottom-info {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 390px) {
+  .footer .footer-container .footer-bottom .footer-bottom-info {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer .footer-container .footer-bottom .footer-bottom-info .footer-bottom-info-start {
+    flex-direction: column;
+  }
+  .footer .footer-container .footer-bottom .footer-bottom-info .footer-bottom-info-start p::after {
+    border: none;
   }
 }/*# sourceMappingURL=responsive.css.map */
