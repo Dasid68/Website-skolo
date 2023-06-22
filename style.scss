@@ -219,7 +219,7 @@ $navbar : red;
 
 .slideshow
 {
-    background-color: aqua;
+    background-color: #3c3c4c;
     width: 100%;
     height: 500px;
     display:-webkit-box;
@@ -233,22 +233,23 @@ $navbar : red;
 
     .slide-container{
         background-color: #3c3c4c;
-        width: 70%;
-        //width: 100%;
-        //max-width: 1330px;
+        //width: 70%;
+        width: 100%;
+        max-width: 1320px;
         height: 100%;
-        border: 1px solid red;
+        //border: 1px solid red;
         display:-webkit-box;
         display:-ms-flexbox;
         display:flex;
         //float:left;
         //min-width: 1400px;
+        justify-content: space-between;
 
 
 
 
         .slideshow-image-container{
-            width:70%;
+            width:66%;
             background-color: red;
             -webkit-box-ordinal-group:2;
             -ms-flex-order:1;
@@ -266,16 +267,50 @@ $navbar : red;
 
         .slideshow-text-container{
             width:30%;
-            background-color: rgb(0, 174, 255);
+            //background-color: rgb(0, 174, 255);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding:50px 0px;
             
-            .title-of-slideshow{
+            //.slideshow-text-wrapper{
 
+                .title-of-slideshow{
+                    color:white;
+                    font-size: 31px;
+                    font-weight: 600;
+                    margin-bottom:15px;
+                }
+    
+                .description-of-slideshow{
+                    color:white;
+                    font-size: 20px;
+                    margin-bottom:40px;
+                    width: 100%;
+                    overflow: hidden;
+                    
+                }
+            //}
+            
+            
+            .slideshow-more{
+                text-decoration: none;
+                color:white;
+                background-color: #646470;
+                border:1px solid #646470;
+                width:80px;
+                padding:10px 0px;
+                text-align: center;
+                font-weight: bold;
+                margin-top:20px;
+                
             }
         }
     }
 
     .left-button-container{
-        background-color: #3c3c4c;
+        //background-color: #3c3c4c;
+        //background-color: powderblue;
         -webkit-box-ordinal-group:0;
         -ms-flex-order:-1;
         order:-1;
@@ -290,6 +325,9 @@ $navbar : red;
         -ms-flex-align: center;
         align-items: center;
         //float:left;
+        position: absolute;
+        left:0;
+        height: 100%;
 
         #arrow-left{
             font-size:30px;
@@ -298,7 +336,7 @@ $navbar : red;
     }
 
     .right-button-container{
-        background-color: #3c3c4c;
+        //background-color: #3c3c4c;
         width: 15%;
         display: -webkit-box;
         display: -ms-flexbox;
@@ -310,6 +348,9 @@ $navbar : red;
         -ms-flex-align: center;
         align-items: center;
         //float:right;
+        position:absolute;
+        right:0;
+        height: 100%;
 
         #arrow-right{
             font-size:30px;
@@ -444,7 +485,7 @@ $navbar : red;
            .news-text-content{
             padding:10px 20px 0px 20px; 
             //height: 70%;
-            background-color: red;
+            //background-color: red;
             height: 100%;
             min-height: 240px;
             overflow: hidden;
@@ -538,7 +579,7 @@ $navbar : red;
 .city-partners
 {
     width: 100%;
-    background-color: #cfcfcf;
+    //background-color: #cfcfcf;
    /* display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -583,7 +624,7 @@ $navbar : red;
 .who-are-we
 {
     width: 100%;
-    background-color: rgb(175, 164, 114);
+    background-color: rgb(227,222,227);
     //padding:25px;
 
     
@@ -668,7 +709,7 @@ $navbar : red;
             //display: flex;
             //justify-content: ;
             max-width:1000px;
-            background-color: powderblue;
+            //background-color: powderblue;
 
             .why-us-reasons-start{
                 width: 50%;
@@ -984,3 +1025,5 @@ $navbar : red;
 
     
 }
+
+

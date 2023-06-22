@@ -151,7 +151,7 @@ html, body {
 
 /*SLIDESHOW*/
 .slideshow {
-  background-color: aqua;
+  background-color: #3c3c4c;
   width: 100%;
   height: 500px;
   display: flex;
@@ -160,13 +160,14 @@ html, body {
 }
 .slideshow .slide-container {
   background-color: #3c3c4c;
-  width: 70%;
+  width: 100%;
+  max-width: 1320px;
   height: 100%;
-  border: 1px solid red;
   display: flex;
+  justify-content: space-between;
 }
 .slideshow .slide-container .slideshow-image-container {
-  width: 70%;
+  width: 66%;
   background-color: red;
   order: 1;
 }
@@ -178,26 +179,57 @@ html, body {
 }
 .slideshow .slide-container .slideshow-text-container {
   width: 30%;
-  background-color: rgb(0, 174, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px 0px;
+}
+.slideshow .slide-container .slideshow-text-container .title-of-slideshow {
+  color: white;
+  font-size: 31px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.slideshow .slide-container .slideshow-text-container .description-of-slideshow {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 40px;
+  width: 100%;
+  overflow: hidden;
+}
+.slideshow .slide-container .slideshow-text-container .slideshow-more {
+  text-decoration: none;
+  color: white;
+  background-color: #646470;
+  border: 1px solid #646470;
+  width: 80px;
+  padding: 10px 0px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 20px;
 }
 .slideshow .left-button-container {
-  background-color: #3c3c4c;
   order: -1;
   width: 15%;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  left: 0;
+  height: 100%;
 }
 .slideshow .left-button-container #arrow-left {
   font-size: 30px;
   color: gray;
 }
 .slideshow .right-button-container {
-  background-color: #3c3c4c;
   width: 15%;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  right: 0;
+  height: 100%;
 }
 .slideshow .right-button-container #arrow-right {
   font-size: 30px;
@@ -272,7 +304,6 @@ html, body {
 }
 .news .news-container .news-card .news-text-content {
   padding: 10px 20px 0px 20px;
-  background-color: red;
   height: 100%;
   min-height: 240px;
   overflow: hidden;
@@ -330,7 +361,6 @@ html, body {
 /*CITY PARTNERS*/
 .city-partners {
   width: 100%;
-  background-color: #cfcfcf;
   /* display: -webkit-box;
    display: -ms-flexbox;
    display: flex;
@@ -361,7 +391,7 @@ html, body {
 /*WHO ARE WE/ABOUT US*/
 .who-are-we {
   width: 100%;
-  background-color: rgb(175, 164, 114);
+  background-color: rgb(227, 222, 227);
 }
 .who-are-we .who-are-we-title {
   font-size: 40px;
@@ -416,7 +446,6 @@ html, body {
 .why-us .why-us-reasons-container .why-us-reasons-wrapper {
   width: 100%;
   max-width: 1000px;
-  background-color: powderblue;
 }
 .why-us .why-us-reasons-container .why-us-reasons-wrapper .why-us-reasons-start {
   width: 50%;
